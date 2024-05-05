@@ -18,5 +18,9 @@ The project follows a Model-View-Controller (MVC) architecture:
 Browse movie recommendations based on user preferences.
 Search for specific movies using the TMDb API.
 View detailed information about movies, such as ratings, genres, and release dates.
+
+
 ![Screenshot 2024-05-05 at 8 44 49](https://github.com/UriKoren/TheMovieQuest/assets/89452452/f206890e-ca3e-4427-b4d3-47deb9832bb2)
+
+
 ![Screenshot 2024-05-05 at 8 44 57](https://github.com/UriKoren/TheMovieQuest/assets/89452452/5b41a2a9-cfac-492c-938a-4bfda2075674)
