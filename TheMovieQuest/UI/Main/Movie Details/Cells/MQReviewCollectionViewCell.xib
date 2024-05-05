@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MQReviewCollectionViewCell" id="gTV-IL-0wX" customClass="MQReviewCollectionViewCell" customModule="TheMovieQuest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="140" height="180"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="140" height="180"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cJj-38-vv2">
+                        <rect key="frame" x="5" y="5" width="130" height="170"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Esx-4a-qKz">
+                                <rect key="frame" x="5" y="5" width="120" height="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cC4-RV-w6c">
+                                <rect key="frame" x="5" y="27" width="120" height="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Esx-4a-qKz" secondAttribute="trailing" constant="5" id="K0I-AU-tZM"/>
+                            <constraint firstItem="cC4-RV-w6c" firstAttribute="top" secondItem="Esx-4a-qKz" secondAttribute="bottom" constant="10" id="Lwe-gL-CLz"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="cC4-RV-w6c" secondAttribute="bottom" constant="10" id="SOF-6S-EUM"/>
+                            <constraint firstAttribute="width" constant="130" id="SOg-Qc-HXB"/>
+                            <constraint firstItem="Esx-4a-qKz" firstAttribute="top" secondItem="cJj-38-vv2" secondAttribute="top" constant="5" id="ZKo-If-Xhv"/>
+                            <constraint firstItem="cC4-RV-w6c" firstAttribute="leading" secondItem="cJj-38-vv2" secondAttribute="leading" constant="5" id="aVe-SX-Lq0"/>
+                            <constraint firstItem="Esx-4a-qKz" firstAttribute="leading" secondItem="cJj-38-vv2" secondAttribute="leading" constant="5" id="hAq-Jm-WdC"/>
+                            <constraint firstAttribute="height" constant="170" id="kxA-CR-Z0M"/>
+                            <constraint firstAttribute="trailing" secondItem="cC4-RV-w6c" secondAttribute="trailing" constant="5" id="oeB-Xw-G17"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="cJj-38-vv2" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="GXy-9h-qvA"/>
+                <constraint firstAttribute="trailing" secondItem="cJj-38-vv2" secondAttribute="trailing" constant="5" id="JUl-lQ-NX7"/>
+                <constraint firstItem="cJj-38-vv2" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="gyd-YB-8w7"/>
+                <constraint firstAttribute="bottom" secondItem="cJj-38-vv2" secondAttribute="bottom" constant="5" id="wRG-KO-dKO"/>
+            </constraints>
+            <size key="customSize" width="140" height="189"/>
+            <connections>
+                <outlet property="authorLabel" destination="Esx-4a-qKz" id="ZUE-Sr-qiy"/>
+                <outlet property="reviewContentLabel" destination="cC4-RV-w6c" id="5eS-R7-Hor"/>
+                <outlet property="reviewContrinerView" destination="cJj-38-vv2" id="IsH-5r-OmG"/>
+            </connections>
+            <point key="canvasLocation" x="137.40458015267174" y="27.816901408450704"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
